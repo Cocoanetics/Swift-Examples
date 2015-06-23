@@ -35,6 +35,9 @@ extension UIView
 	*/
 	func addProportionalOriginConstraints()
 	{
+		// need to disable autoresizing masks, they might interfere
+		self.setTranslatesAutoresizingMaskIntoConstraints(false)
+		
 		// there must be a superview
 		let superview = self.superview!
 		
@@ -102,6 +105,9 @@ extension UIView
 	*/
 	func addProportionalSizeConstraints()
 	{
+		// need to disable autoresizing masks, they might interfere
+		self.setTranslatesAutoresizingMaskIntoConstraints(false)
+
 		// there must be a superview
 		let superview = self.superview!
 		
