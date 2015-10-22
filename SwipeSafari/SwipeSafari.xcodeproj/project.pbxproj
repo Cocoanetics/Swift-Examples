@@ -12,20 +12,9 @@
 		4BD1A7EC1BD799DB00879039 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BD1A7EA1BD799DB00879039 /* Main.storyboard */; };
 		4BD1A7EE1BD799DB00879039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD1A7ED1BD799DB00879039 /* Assets.xcassets */; };
 		4BD1A7F11BD799DB00879039 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BD1A7EF1BD799DB00879039 /* LaunchScreen.storyboard */; };
-		4BD1A7FC1BD799DB00879039 /* SwipeSafariTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD1A7FB1BD799DB00879039 /* SwipeSafariTests.swift */; };
-		4BD1A8071BD79A4E00879039 /* OCSafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD1A8061BD79A4E00879039 /* OCSafariViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		4BD1A8091BD79A6000879039 /* OCPushPopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD1A8081BD79A6000879039 /* OCPushPopAnimator.swift */; settings = {ASSET_TAGS = (); }; };
+		4BD1A8071BD79A4E00879039 /* OCSafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD1A8061BD79A4E00879039 /* OCSafariViewController.swift */; };
+		4BD1A8091BD79A6000879039 /* OCPushPopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD1A8081BD79A6000879039 /* OCPushPopAnimator.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		4BD1A7F81BD799DB00879039 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4BD1A7DB1BD799DB00879039 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4BD1A7E21BD799DB00879039;
-			remoteInfo = SwipeSafari;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4BD1A7E31BD799DB00879039 /* SwipeSafari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeSafari.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,22 +24,12 @@
 		4BD1A7ED1BD799DB00879039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BD1A7F01BD799DB00879039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4BD1A7F21BD799DB00879039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4BD1A7F71BD799DB00879039 /* SwipeSafariTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwipeSafariTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BD1A7FB1BD799DB00879039 /* SwipeSafariTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeSafariTests.swift; sourceTree = "<group>"; };
-		4BD1A7FD1BD799DB00879039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BD1A8061BD79A4E00879039 /* OCSafariViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCSafariViewController.swift; sourceTree = "<group>"; };
 		4BD1A8081BD79A6000879039 /* OCPushPopAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCPushPopAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4BD1A7E01BD799DB00879039 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4BD1A7F41BD799DB00879039 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -64,7 +43,6 @@
 			isa = PBXGroup;
 			children = (
 				4BD1A7E51BD799DB00879039 /* SwipeSafari */,
-				4BD1A7FA1BD799DB00879039 /* SwipeSafariTests */,
 				4BD1A7E41BD799DB00879039 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,7 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				4BD1A7E31BD799DB00879039 /* SwipeSafari.app */,
-				4BD1A7F71BD799DB00879039 /* SwipeSafariTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,15 +68,6 @@
 				4BD1A7F21BD799DB00879039 /* Info.plist */,
 			);
 			path = SwipeSafari;
-			sourceTree = "<group>";
-		};
-		4BD1A7FA1BD799DB00879039 /* SwipeSafariTests */ = {
-			isa = PBXGroup;
-			children = (
-				4BD1A7FB1BD799DB00879039 /* SwipeSafariTests.swift */,
-				4BD1A7FD1BD799DB00879039 /* Info.plist */,
-			);
-			path = SwipeSafariTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,24 +90,6 @@
 			productReference = 4BD1A7E31BD799DB00879039 /* SwipeSafari.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4BD1A7F61BD799DB00879039 /* SwipeSafariTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4BD1A8031BD799DB00879039 /* Build configuration list for PBXNativeTarget "SwipeSafariTests" */;
-			buildPhases = (
-				4BD1A7F31BD799DB00879039 /* Sources */,
-				4BD1A7F41BD799DB00879039 /* Frameworks */,
-				4BD1A7F51BD799DB00879039 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4BD1A7F91BD799DB00879039 /* PBXTargetDependency */,
-			);
-			name = SwipeSafariTests;
-			productName = SwipeSafariTests;
-			productReference = 4BD1A7F71BD799DB00879039 /* SwipeSafariTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -151,10 +101,6 @@
 				TargetAttributes = {
 					4BD1A7E21BD799DB00879039 = {
 						CreatedOnToolsVersion = 7.0.1;
-					};
-					4BD1A7F61BD799DB00879039 = {
-						CreatedOnToolsVersion = 7.0.1;
-						TestTargetID = 4BD1A7E21BD799DB00879039;
 					};
 				};
 			};
@@ -172,7 +118,6 @@
 			projectRoot = "";
 			targets = (
 				4BD1A7E21BD799DB00879039 /* SwipeSafari */,
-				4BD1A7F61BD799DB00879039 /* SwipeSafariTests */,
 			);
 		};
 /* End PBXProject section */
@@ -185,13 +130,6 @@
 				4BD1A7F11BD799DB00879039 /* LaunchScreen.storyboard in Resources */,
 				4BD1A7EE1BD799DB00879039 /* Assets.xcassets in Resources */,
 				4BD1A7EC1BD799DB00879039 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4BD1A7F51BD799DB00879039 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,23 +147,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BD1A7F31BD799DB00879039 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4BD1A7FC1BD799DB00879039 /* SwipeSafariTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4BD1A7F91BD799DB00879039 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4BD1A7E21BD799DB00879039 /* SwipeSafari */;
-			targetProxy = 4BD1A7F81BD799DB00879039 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4BD1A7EA1BD799DB00879039 /* Main.storyboard */ = {
@@ -352,30 +274,6 @@
 			};
 			name = Release;
 		};
-		4BD1A8041BD799DB00879039 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = SwipeSafariTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.drobnik.SwipeSafariTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwipeSafari.app/SwipeSafari";
-			};
-			name = Debug;
-		};
-		4BD1A8051BD799DB00879039 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = SwipeSafariTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.drobnik.SwipeSafariTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwipeSafari.app/SwipeSafari";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -395,14 +293,7 @@
 				4BD1A8021BD799DB00879039 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		4BD1A8031BD799DB00879039 /* Build configuration list for PBXNativeTarget "SwipeSafariTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4BD1A8041BD799DB00879039 /* Debug */,
-				4BD1A8051BD799DB00879039 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
