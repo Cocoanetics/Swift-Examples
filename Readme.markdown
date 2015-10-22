@@ -12,6 +12,7 @@ Clone the git project to your harddisk.
 Contents:
 
 - [Proportional Layout with Swift](http://www.cocoanetics.com/2015/06/proportional-layout-with-swift/)
+- [Swiping Away SFSafariViewController](https://www.cocoanetics.com/2015/10/swiping-away-sfsafariviewcontroller/)
 
 Please buy my book about [Barcodes with iOS](http://www.cocoanetics.com/2014/03/read-my-book/), it will change your life!
 
