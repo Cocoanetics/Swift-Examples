@@ -88,6 +88,7 @@ public final class HeroRaysView: UIView
         anim.toValue = CGFloat(2.0 * M_PI)
         anim.duration = 12 // seconds per rotation
         anim.repeatCount = Float.infinity
+        anim.removedOnCompletion = false
         
         raysView.layer.addAnimation(anim, forKey: "rotate")
     }
