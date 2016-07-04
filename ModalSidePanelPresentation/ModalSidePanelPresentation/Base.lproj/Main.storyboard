@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ModalSidePanelPresentation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lEV-wb-KfA">
+                                <rect key="frame" x="274" y="285" width="53" height="30"/>
+                                <state key="normal" title="Present"/>
+                                <connections>
+                                    <segue destination="rBq-VF-bMd" kind="custom" customClass="ModalSidePanelPresentationSegue" customModule="ModalSidePanelPresentation" customModuleProvider="target" id="v9f-nb-ZOu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lEV-wb-KfA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4qe-h2-Grq"/>
+                            <constraint firstItem="lEV-wb-KfA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BBL-MT-mNn"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="ETR-JZ-E4U">
+            <objects>
+                <viewController id="rBq-VF-bMd" customClass="SecondViewController" customModule="ModalSidePanelPresentation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kQL-kv-Iin"/>
+                        <viewControllerLayoutGuide type="bottom" id="LyR-Vz-O3W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PDH-AM-6Ie">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snh-tL-rgZ">
+                                <rect key="frame" x="273" y="285" width="54" height="30"/>
+                                <state key="normal" title="Dismiss"/>
+                                <connections>
+                                    <segue destination="ZYa-21-F67" kind="unwind" unwindAction="unwind:" id="clb-U7-4BQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.73172569269999999" green="0.17417526250000001" blue="0.63607776169999997" alpha="0.2122949911" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="snh-tL-rgZ" firstAttribute="centerY" secondItem="PDH-AM-6Ie" secondAttribute="centerY" id="ZbE-Ek-VrR"/>
+                            <constraint firstItem="snh-tL-rgZ" firstAttribute="centerX" secondItem="PDH-AM-6Ie" secondAttribute="centerX" id="j1x-dR-zU0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M7I-Xm-f24" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ZYa-21-F67" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="982" y="325"/>
+        </scene>
+    </scenes>
+</document>

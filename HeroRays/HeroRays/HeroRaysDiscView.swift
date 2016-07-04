@@ -52,7 +52,7 @@ internal final class HeroRaysDiscView: UIView
         let raysPath = UIBezierPath()
         let oneRayRadians = (2.0 * CGFloat(M_PI)) / CGFloat(numberOfSlices)
         
-        for var i=0; i<numberOfSlices; i++
+        for i in 0..<numberOfSlices
         {
             // skip every second slice, for background to show
             if i%2 != 0
