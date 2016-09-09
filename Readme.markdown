@@ -15,6 +15,7 @@ Contents:
 - [Swiping Away SFSafariViewController](https://www.cocoanetics.com/2015/10/swiping-away-sfsafariviewcontroller/)
 - [Hero Rays](https://www.cocoanetics.com/2015/11/hero-rays/)
 - [An Update on Custom Modal Presentations]( https://www.cocoanetics.com/2016/07/an-update-on-custom-modal-presentations/)
+- [Asynchronous NSTextAttachments](https://www.cocoanetics.com/2016/09/asynchronous-nstextattachment-1/)
 
 Please buy my book about [Barcodes with iOS](http://www.cocoanetics.com/2014/03/read-my-book/), it will change your life!
 
