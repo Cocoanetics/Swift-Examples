@@ -26,7 +26,7 @@ class ViewController: UIViewController
 //		let attributedString = NSAttributedString(attachment: attachment)
 //		textView.attributedText = attributedString
 		
-		let imageURL = NSURL(string: "https://www.cocoanetics.com/files/Cocoanetics_Square.jpg")!
+		let imageURL = URL(string: "https://www.cocoanetics.com/files/Cocoanetics_Square.jpg")!
         let attachment = AsyncTextAttachment(imageURL: imageURL)
 //        attachment.displaySize = CGSize(width: 100, height: 134)
 //        attachment.image = UIImage.placeholder(UIColor.grayColor(), size: attachment.displaySize!)
