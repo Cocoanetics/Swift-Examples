@@ -23,9 +23,9 @@ extension NSLayoutManager
 		
 		var refreshRanges = [NSRange]()
 		
-		attributedString.enumerateAttribute(NSAttachmentAttributeName, inRange: range, options: []) { (value, effectiveRange, nil) in
+        attributedString.enumerateAttribute(NSAttributedString.Key.attachment, in: range, options: []) { (value, effectiveRange, nil) in
 			
-			guard let foundAttachment = value as? NSTextAttachment where foundAttachment == attachment else
+			guard let foundAttachment = value as? NSTextAttachment, foundAttachment == attachment else
 			{
 				return
 			}
@@ -45,33 +45,31 @@ extension NSLayoutManager
 	/// Trigger a relayout for an attachment
 	public func setNeedsLayout(forAttachment attachment: NSTextAttachment)
 	{
-		guard let ranges = rangesForAttachment(attachment) else
+        guard let ranges = rangesForAttachment(attachment: attachment) else
 		{
 			return
 		}
-		
-		// invalidate the display for the corresponding ranges
-		ranges.reverse().forEach { (range) in
-			
-			self.invalidateLayoutForCharacterRange(range, actualCharacterRange: nil)
-			
-			// also need to trigger re-display or already visible images might not get updated
-			self.invalidateDisplayForCharacterRange(range)
-		}
+
+        // invalidate the display for the corresponding ranges
+        for range in ranges.reversed() {
+            self.invalidateLayout(forCharacterRange: range, actualCharacterRange: nil)
+
+            // also need to trigger re-display or already visible images might not get updated
+            self.invalidateDisplay(forCharacterRange: range)
+        }
 	}
 	
 	/// Trigger a re-display for an attachment
 	public func setNeedsDisplay(forAttachment attachment: NSTextAttachment)
 	{
-		guard let ranges = rangesForAttachment(attachment) else
+        guard let ranges = rangesForAttachment(attachment: attachment) else
 		{
 			return
 		}
-		
-		// invalidate the display for the corresponding ranges
-		ranges.reverse().forEach { (range) in
-			
-			self.invalidateDisplayForCharacterRange(range)
-		}
+
+        // invalidate the display for the corresponding ranges
+        for range in ranges.reversed() {
+            self.invalidateDisplay(forCharacterRange: range)
+        }
 	}
 }
